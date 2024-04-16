@@ -1,0 +1,22 @@
+* {
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+}
+
+.w-layout-hflex {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+section#module {
+  min-height: 100vh;
+}

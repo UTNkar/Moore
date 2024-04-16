@@ -1,0 +1,14 @@
+# We use a larger print width because Prettier's word-wrapping seems to be tuned
+# for plain JavaScript without type annotations.
+printWidth: 110
+#  Single quotes–better readability
+singleQuote: true
+# Preserve existing newlines
+endOfLine: 'auto'
+# For ES5, trailing commas cannot be used in function parameters; it is counterintuitive
+# to use them for arrays only.
+trailingComma: 'all'
+
+plugins:
+  - 'prettier-plugin-toml'
+  - 'prettier-plugin-tailwindcss'

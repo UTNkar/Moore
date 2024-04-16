@@ -1,0 +1,14 @@
+.root {
+  width: 100%;
+  flex: 1 1 auto;
+  padding: 6em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-secondary);
+
+  p {
+    width: 100%;
+    max-width: 100%;
+  }
+}

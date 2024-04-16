@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": true,
+    "baseUrl": ".",
+    /* Preact Config */
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "paths": {
+      "#root/*": ["./src/*"],
+      "#public/*": ["./public/*"],
+    },
+  },
+  "include": ["node", "src/**/*.ts", "src/**/*.tsx", "./*.ts", "./dev-server/*.ts", "./worker/*.ts"],
+  "exclude": ["node_modules/**/*"],
+}
