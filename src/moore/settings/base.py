@@ -261,7 +261,6 @@ INSTAGRAM_APP_SECRET = config('INSTAGRAM_APP_SECRET', default='')
 INSTAGRAM_REDIRECT_URL = config('INSTAGRAM_REDIRECT_URL', default='')
 
 try:
-    UNICORE_URL = config('UNICORE_URL')
     UNICORE_ADMIN = config('UNICORE_ADMIN')
 except UndefinedValueError:
     # This allows the tests to be runned without having to have UNICORE_URL and
@@ -270,11 +269,18 @@ except UndefinedValueError:
     # not filled in the variables in their .env. I.e. The variables are still
     # required, except for when the tests are runned.
     if not IS_RUNNING_TEST:
-        raise UndefinedValueError(
-            "You must add UNICORE_URL and UNICORE_ADMIN to you .env file"
-        )
+        print(UndefinedValueError(
+            "You are missing UNICORE_ADMIN in your .env file, which means "
+            + "user data cannot be retrieved from Unicore. All users will "
+            + "be assumed to be members of UTN (is_member returns True)."
+        ))
 
+UNICORE_ADMIN = config('UNICORE_ADMIN', default='')
 UNICORE_ORG_ID = config('UNICORE_ORG_ID', default='')
+UNICORE_URL = config(
+    'UNICORE_URL',
+    default='https://unicorecustomapi.mecenat.com/utn'
+)
 
 # Google API
 GOOGLE_API_KEY = config('GOOGLE_API_KEY', default='')
