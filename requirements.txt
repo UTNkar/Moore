@@ -30,7 +30,7 @@ psycopg2==2.9.5
 phonenumbers==8.13.6
 
 # Wagtail media module
-wagtailmedia==0.9.0
+wagtailmedia==0.13.0
 
 djangorestframework==3.14.0
 
