@@ -6,7 +6,7 @@ wagtail==2.16.2
 django-hosts==6.0
 
 # External Libraries
-requests==2.28.2
+requests==2.31.0
 
 # Templates
 django-compressor==2.4.1
