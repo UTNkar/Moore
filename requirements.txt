@@ -9,7 +9,7 @@ django-hosts==6.0
 requests==2.28.2
 
 # Templates
-django-compressor==2.4.1
+django-compressor==4.4
 django-libsass==0.9
 wagtailfontawesome==1.2.1
 
